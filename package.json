@@ -1,0 +1,28 @@
+{
+  "name": "sorting",
+  "version": "1.0.0",
+  "description": "Sorting stuff bro",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon .",
+    "test": "mocha",
+    "test-watch": "mocha --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aukai84/sorting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aukai84/sorting/issues"
+  },
+  "homepage": "https://github.com/aukai84/sorting#readme",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "chai": "^3.5.0",
+    "express": "^4.14.1",
+    "mocha": "^3.2.0",
+    "supertest": "^3.0.0"
+  }
+}
