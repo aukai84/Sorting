@@ -12,6 +12,7 @@ describe("Sorting Module", () => {
 
     let bubbleSort = sortModule.bubbleSort;
     let unsortedArray = [5,1,4,2,8];
+    let sortedArray = [1,2,4,5,8];
     it("should be function", () => {
         bubbleSort.should.be.a.function;
     });
@@ -32,6 +33,15 @@ describe("Sorting Module", () => {
         for(let i = 0; i < unsortedArray.length; i ++){
             unsortedArray[i].should.be.a('number');
         }
+    });
+    it("sorted array should only have numbers as inputs", () => {
+        let sortedArray = bubbleSort(unsortedArray);
+        for(let i = 0; i < unsortedArray.length; i++){
+            sortedArray[i].should.be.a('number');
+        }
+    });
+    it("sorted array should equal [1,2,4,5,8]", () => {
+        bubbleSort(unsortedArray.should.deep.equal(sortedArray));
     });
 
 
