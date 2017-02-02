@@ -1,7 +1,7 @@
 
 function bubbleSort(array) {
     //sort array here
-    return [];
+    return array;
 }
 
 module.exports = {

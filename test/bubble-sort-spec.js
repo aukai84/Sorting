@@ -8,25 +8,30 @@ chai.should();
 const sortModule = require('../modules/bubble-sort-module.js');
 console.log(sortModule);
 
-describe("sortModule", () => {
+describe("Sorting Module", () => {
 
     let bubbleSort = sortModule.bubbleSort;
     let unsortedArray = [5,1,4,2,8];
     console.log(bubbleSort);
     console.log(bubbleSort(unsortedArray));
-
-
     it("should be function", () => {
         bubbleSort.should.be.a.function;
     });
-
     it("should only have one parameter", () => {
         bubbleSort.constructor.should.have.length(1);
     });
-
     it("should return an array", () => {
         bubbleSort(unsortedArray).should.be.an.array;
     });
+    it("sorted array should have same length of unsortedArray", () => {
+        let length = unsortedArray.length;
+        bubbleSort(unsortedArray).should.have.length(length);
+    });
+    it("should return array with length of 5", () => {
+        bubbleSort(unsortedArray).should.have.length(5);
+    });
+
+
 
 
 
