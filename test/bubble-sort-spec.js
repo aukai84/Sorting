@@ -6,13 +6,13 @@
 const chai = require('chai');
 chai.should();
 const sortModule = require('../modules/bubble-sort-module.js');
-console.log(sortModule);
 
 describe("Sorting Module", () => {
 
     let bubbleSort = sortModule.bubbleSort;
     let unsortedArray = [5,1,4,2,8];
     let sortedArray = [1,2,4,5,8];
+
     it("should be function", () => {
         bubbleSort.should.be.a.function;
     });
