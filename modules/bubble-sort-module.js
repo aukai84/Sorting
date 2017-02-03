@@ -1,10 +1,9 @@
 
 function bubbleSort(array) {
-    let swapped;
-
-    do {
+    let swapped = true;
+    while(swapped){
         swapped = false;
-        for(let i = 0; i < array.length; i ++){
+        for(let i = 0; i < array.length; i++){
             if(array[i] > array[i + 1]){
                 let temp = array[i];
                 array[i] = array[i + 1];
@@ -12,7 +11,7 @@ function bubbleSort(array) {
                 swapped = true;
             }
         }
-    } while (swapped);
+    }
     return array;
 }
 let unsortedArray = [5,1,2,4,8,88,7,10];

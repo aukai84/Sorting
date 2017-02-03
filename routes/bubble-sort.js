@@ -12,6 +12,7 @@ router.post('/', (req,res) => {
     for(let i in req.body){
         unsortedArray.push(parseInt(req.body[i]));
     }
+    console.log(unsortedArray)
     let sortedArray = bubbleSort(unsortedArray);
     console.log(sortedArray);
 
