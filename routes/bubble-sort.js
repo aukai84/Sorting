@@ -15,6 +15,7 @@ router.post('/', (req,res) => {
     let sortedArray = bubbleSort(unsortedArray);
     console.log(sortedArray);
 
+    res.render('index', {array: sortedArray});
 });
 
 module.exports = router;

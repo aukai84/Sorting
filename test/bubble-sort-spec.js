@@ -17,7 +17,7 @@ describe("Sorting Module", () => {
         bubbleSort.should.be.a.function;
     });
     it("should only have one parameter", () => {
-        bubbleSort.constructor.should.have.length(1);
+        bubbleSort.prototype.constructor.should.have.length(1);
     });
     it("should return an array", () => {
         bubbleSort(unsortedArray).should.be.an.array;
