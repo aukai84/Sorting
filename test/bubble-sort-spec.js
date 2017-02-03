@@ -20,7 +20,7 @@ describe("Sorting Module", () => {
         bubbleSort.prototype.constructor.should.have.length(1);
     });
     it("should return an array", () => {
-        bubbleSort(unsortedArray).should.be.an.array;
+        bubbleSort(unsortedArray).should.be.an('array');
     });
     it("sorted array should have same length of unsortedArray", () => {
         let length = unsortedArray.length;
