@@ -3,6 +3,7 @@ const bodyParser = require('body-parser');
 const handlebars = require('express-handlebars');
 const bubbleSort = require('./routes/bubble-sort.js');
 const quickSort = require('./routes/quick-sort.js');
+const insertionSort = require('./routes/insertion-sort');
 
 const app = express();
 
@@ -17,6 +18,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use('/bubble-sort', bubbleSort);
 app.use('/quick-sort', quickSort);
+app.use('/insertion-sort', insertionSort);
 
 app.get('/', (req, res) => {
     res.render('index');
