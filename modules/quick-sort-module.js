@@ -17,7 +17,7 @@ function quickSort(array) {
     return newArray;
 }
 
-let unsortedArray = [2,3,5,9,6, 10, 100, 4, 7, 8, 22, 99,7765644, 88654, 2, 3, 4, 5];
+let unsortedArray = [4,6,9,2,3];
 console.log(quickSort(unsortedArray));
 
 module.exports = quickSort;
