@@ -30,7 +30,6 @@ function merge(left, right) {
         result.push(left[0]);
         left.shift();
     }
-    console.log(result);
     return result;
 }
 

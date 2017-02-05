@@ -19,6 +19,4 @@ function swap(items, firstIndex, secondIndex) {
     items[secondIndex] = temp;
 }
 
-console.log(selectionSort([5,6,9,3,44,578]));
-
 module.exports = selectionSort;

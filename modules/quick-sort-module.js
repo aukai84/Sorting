@@ -17,7 +17,4 @@ function quickSort(array) {
     return newArray;
 }
 
-let unsortedArray = [4,6,9,2,3];
-console.log(quickSort(unsortedArray));
-
 module.exports = quickSort;
