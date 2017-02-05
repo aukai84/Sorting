@@ -6,8 +6,6 @@ function mergeSort(array) {
     let middle = parseInt(Math.floor(array.length/2));
     let leftArray = array.slice(0, middle);
     let rightArray = array.slice(middle, array.length);
-    console.log("left array = ", leftArray);
-    console.log("right array = ", rightArray);
     let sortedArray = merge(mergeSort(leftArray), mergeSort(rightArray));
     return sortedArray;
 }
