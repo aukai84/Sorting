@@ -18,6 +18,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use('/bubble-sort', bubbleSort);
 app.use('/quick-sort', quickSort);
 
+app.get('/', (req, res) => {
+    res.render('index');
+});
 
 
 

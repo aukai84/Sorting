@@ -7,15 +7,13 @@ router.get('/', (req, res) => {
 });
 
 router.post('/', (req, res) => {
-    console.log(req.body);
+    console.log('quick sorting....')
     let unsortedArray = [];
     for(let i in req.body){
         unsortedArray.push(parseInt(req.body[i]));
     }
-    console.log(unsortedArray);
     let sortedArray = quickSort(unsortedArray);
-    console.log(sortedArray);
-    res.render('index', {array: sortedArray});
+    res.render('index', {array: sortedArray, name: "Quick Sort"});
 });
 
 module.exports = router;
