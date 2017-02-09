@@ -10,6 +10,10 @@ Bubble sort is one first sorting algorithms taught when a student is learning so
 ### Pseudo code
 
 ```
-//running pseudo code
+implement bubbleSort ( var A = list of sortable items)
+    needs to swap = true
+    while(needs to swap)
+        temporarily stop swap
+        for i
 
 ```
