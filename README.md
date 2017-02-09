@@ -21,5 +21,5 @@ Super Extra
 
 Write a browser tool that will visually show the array and it's values as they are being sorted to see how the elements are moving in real time. It will be impossible to see things being sorted in real time, so you may need to tweak your function to make this work or find new ways of calling it.
 
-#Helper
+#####Helper
 
