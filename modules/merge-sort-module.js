@@ -33,4 +33,5 @@ function merge(left, right) {
     return result;
 }
 
+mergeSort([400,5,7,8,0,123,4554,6,5,3,2]);
 module.exports = mergeSort;
