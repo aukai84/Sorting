@@ -9,14 +9,24 @@ Bubble sort is one first sorting algorithms taught when a student is learning so
 
 ### Pseudo code
 
-```
+```sh
 func bubbleSort ( var A = list of sortable items)
     needs to swap = true
     while(needs to swap)
-        temporarily stop swap
+        needs to swap = false
         for i = 0 to length of A
             if A[i] > A[i + 1]
                 swap A[i] and A[i +1]
-                start swap again
+                needs to swap = true
 end func
 ```
+
+### Performance
+
+#### Best Case
+
+> O(n)
+
+#### Worst Case
+
+> O(n^2)
