@@ -63,7 +63,7 @@ Selection sort is yet again another simple sorting algorithm that is easy to imp
 ###Pseudo Code
 
 ```javascript
-func selectionSort(var A = lsit of sortable items)
+func selectionSort(var A = list of sortable items)
     for i = 0 to length of A
         smallest = i
         for j = i + 1 to length of A
@@ -84,6 +84,78 @@ end func
 
 * O(n<sup>2</sup>) *quadratic efficiency*
 
-##4. Quick Sorty
+##4. Quick Sort
 
-Quick sort is the so called quickest sorting algorithm that we use today.  The quick sort algorithm creates a `pivot` point on which to compare the rest of the unsorted list.  The algorithm then iterates through the unsorted list and compares it to the `pivot`.  If the next item is less than the `pivot` it stores that item into a "left" array.  If the next item is greater than the `pivot` it stores that item into a "right" array.
+Quick sort is the so called quickest sorting algorithm that we use today.  The quick sort algorithm creates a `pivot` point on which to compare the rest of the unsorted list.  The algorithm then iterates through the unsorted list and compares it to the `pivot`.  If the next item is less than the `pivot` it stores that item into a "left" array.  If the next item is greater than the `pivot` it stores that item into a "right" array.  This function is called `recursively` until the items are broken down in order, then items are joined to create the sorted list.
+
+###Pseudo Code
+
+```javascript
+func quickSort(var A = list of sortable items)
+    create pivot
+    for i = 0 to length of A
+        if i < pivot
+            parition to left array
+        if i >  pivot
+            parition to right array
+    return quickSort(left array) + pivot + quickSort(right array)
+end func
+```
+
+###Performance
+
+####Best Case
+
+* O(n log n) *logarithmic efficiency*
+
+####Worst Case
+
+* O(n<sup>2</sup>) *quadratic efficiency*
+
+##5. Merge Sort
+
+Merge sort is another sorting algorithm we are implementing that is labeled as efficient.  The merge sort algorithm, like quick sort, `recursively` calls itself to run until sorted.  Merge sort splits the unsorted list into two separate lists.  It then `recursively` splits itself and compares the left and right and pushes the smaller number into the final `result` array which will become our sorted list.
+
+###Pseudo Code
+
+```javascript
+func mergeSort(var A = list of sortable items)
+    left = left half of A
+    right = right half of A
+
+    sortedList = merge(left, right)
+end func
+
+func merge (left, right)
+    var B as list
+    while(left and right have elements)
+        if left[0] > right[0]
+        add right[0] to B list
+        remove right[0] right list
+        else
+        add left[0] to B list
+        remove left[0] from left list
+
+    while(left has elements)
+        add left[0] to B list
+        remove left[0] from left list
+
+    while(right has elements)
+        add right[0] to B list
+        remove right[0] from right list
+
+    return B
+end func
+```
+
+###Performance
+
+####Best Case
+
+* O(n log n) *logarithmic efficiency*
+
+####Worst Case
+
+* O(n log n) *logarithmic efficiency*
+
+
