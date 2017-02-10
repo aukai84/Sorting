@@ -7,7 +7,7 @@ Below are some instructions and tips on how to implement these algorithms...
 
 Bubble sort is one first sorting algorithms taught when a student is learning sorting algorithms.  It is a simple algorithm to implement at the cost of speed.  Basically, bubble sort first compares adjacent items in a list of numbers, and swaps them if they are out of order.  At the end of comparing each adjacent item in the list, if the list is not sorted, the algorithm will run through the list again and compare each adjacent item and swap them if they are out of order.  This continues until the list is sorted.
 
-###Pseudo code
+###Pseudo Code
 
 ```javascript
 func bubbleSort ( var A = list of sortable items)
@@ -35,13 +35,25 @@ end func
 
 Insertion sort is another simple algorithm that isn't very efficient with large inputs.  Insertion sort is most similar to Bubble sort than any other sorting algorithm we are learning.  The first item in the list is typically a part of the now "sorted" list.  The algorithm iterates through the rest of the list comparing it with items in the "sorted" list and `inserting` it into the correct place.
 
-###Pseudo code
+###Pseudo Code
 
 ```javascript
 func insertionSort (var A = list of sortable items)
     for i = 1 to length of A
         currentItem = A[i]
-        if currentItem is not sorted
-        inser currentItem into sorted Array
+        if currentItem < sortedItem
+        insert currentItem into sortedList
 end func
 ```
+
+###Performance
+
+####Best Case
+
+* O(n) *linear efficiency*
+
+####Worst Case
+
+* O(n<sup>2</sup>) *quadratic efficiency*
+
+##3. Selection Sort
