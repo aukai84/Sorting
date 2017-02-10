@@ -123,7 +123,8 @@ func mergeSort(var A = list of sortable items)
     left = left half of A
     right = right half of A
 
-    sortedList = merge(left, right)
+    sortedList = merge(mergeSort(left), mergeSort(right)
+    return sortedList
 end func
 
 func merge (left, right)
