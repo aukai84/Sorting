@@ -29,7 +29,7 @@ end func
 
 #### Worst Case
 
- - O(n<sup>2</sup>) *quadratic efficiency*
+ - O(n<sup>2</sup>) *quadratic efficiency*.
 
 
  ## 2. Insertion Sort
