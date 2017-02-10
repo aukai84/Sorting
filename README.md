@@ -83,3 +83,7 @@ end func
 ####Worst Case
 
 * O(n<sup>2</sup>) *quadratic efficiency*
+
+##4. Quick Sorty
+
+Quick sort is the so called quickest sorting algorithm that we use today.  The quick sort algorithm creates a `pivot` point on which to compare the rest of the unsorted list.  The algorithm then iterates through the unsorted list and compares it to the `pivot`.  If the next item is less than the `pivot` it stores that item into a "left" array.  If the next item is greater than the `pivot` it stores that item into a "right" array.
