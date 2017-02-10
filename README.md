@@ -10,10 +10,13 @@ Bubble sort is one first sorting algorithms taught when a student is learning so
 ### Pseudo code
 
 ```
-implement bubbleSort ( var A = list of sortable items)
+func bubbleSort ( var A = list of sortable items)
     needs to swap = true
     while(needs to swap)
         temporarily stop swap
-        for i
-
+        for i = 0 to length of A
+            if A[i] > A[i + 1]
+                swap A[i] and A[i +1]
+                start swap again
+end func
 ```
