@@ -25,8 +25,12 @@ end func
 
 #### Best Case
 
-> O(n)
+- O(n) *linear efficiency*
 
 #### Worst Case
 
-> O(n^2)
+ - O(n<sup>2</sup>) *quadratic efficiency*
+
+ > ## Insertion Sorty
+
+ Insertion sort is another simple algorithm that isn't very efficient with large inputs.  Insertion sort is most similar to Bubble sort than any other sorting algorithm we are learning.  The first item in the list is typically a part of the now "sorted" list.  The algorithm iterates through the rest of the list comparing it with items in the "sorted" list and `sh inserting` it into the correct place.
