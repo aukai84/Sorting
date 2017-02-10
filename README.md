@@ -57,3 +57,29 @@ end func
 * O(n<sup>2</sup>) *quadratic efficiency*
 
 ##3. Selection Sort
+
+Selection sort is yet again another simple sorting algorithm that is easy to implement at the cost of efficiency.  It is also somewhat similar to insertion sort.  The algorithm starts at the left of the "unsorted" list then checks the rest of the list to see if the next number is smaller.  If it is then it swaps it with the previous "smallest" number.
+
+###Pseudo Code
+
+```javascript
+func selectionSort(var A = lsit of sortable items)
+    for i = 0 to length of A
+        smallest = i
+        for j = i + 1 to length of A
+        if A[j] < A[smallest]
+        smallest = j
+    if smallest != i //found a smaller number
+        swap i and smallest //swapping i with new found smallest number
+end func
+```
+
+###Performance
+
+####Best Case
+
+* O(n<sup>2</sup>) *quadratic efficiency*
+
+####Worst Case
+
+* O(n<sup>2</sup>) *quadratic efficiency*
